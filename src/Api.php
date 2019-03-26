@@ -358,7 +358,7 @@ class Api
 
             $packageServices = [];
             foreach ($package->getPackageServices() AS $service) {
-                $packageServices[]['MyApiPackageInServices'] = [
+                $packageServices['MyApiPackageInServices'][] = [
                     'SvcCode' => $service->getSvcCode()
                 ];
             }
